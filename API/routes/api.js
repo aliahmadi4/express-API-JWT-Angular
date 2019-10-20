@@ -3,7 +3,7 @@ const router = express.Router();
 const verifyTokenMdlwr = require('../utils/verifyTokenMdlwr');
 
 router.get('/protected', verifyTokenMdlwr ,(req,res)=>{
-    res.json({hey:"hey"})
+    res.json({msg:"you now access to secret route"})
 })
 
 
