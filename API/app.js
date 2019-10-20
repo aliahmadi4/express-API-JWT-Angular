@@ -20,7 +20,7 @@ mongoose.connect(`mongodb+srv://${dbcredentials.mongoUser}:${dbcredentials.passw
 mongoose.set('useCreateIndex',true);
 
 //Routes
-app.use('/users', require('./routes/user'));
+app.use('/users', require('./routes/users'));
 
 
 
