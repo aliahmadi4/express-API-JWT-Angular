@@ -21,6 +21,7 @@ mongoose.set('useCreateIndex',true);
 
 //Routes
 app.use('/users', require('./routes/users'));
+app.use('/api', require('./routes/api'));
 
 
 

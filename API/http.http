@@ -1,3 +1,4 @@
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxpIiwiZW1haWwiOiJhbGkxNkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCQ5djRNLllTYmxvVHdOSkRjSUtwbEhlbnFlSWhhUXFOSmNQMzVzOGdQQWJnMWVzbjU2UXJndSIsImlhdCI6MTU3MTU4NTI2MH0.A1lKMg-FHbjEVNv0Md6ni3d0QP6hdEjVl29kWKQPuPs
 ### GET ALL
 get http://localhost:3000/users/ http/1.1
 
@@ -19,3 +20,8 @@ Content-Type: application/json
     "email":"ali16@gmail.com",
     "password": "123456"
 }
+
+###
+get http://localhost:3000/api/protected http/1.1
+jwt: {{token}}
+
